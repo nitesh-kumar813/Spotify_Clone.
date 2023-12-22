@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -15,13 +15,46 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+ */
+ 
+ @layer components{
+  .button{
+      @apply h-5 w-5 cursor-pointer hover:scale-125 transition transform
+      duration-100 ease-out;
+  }
+}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* .wrapper::-webkit-scrollbar {
+  width: 13px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #3c3a3a;
+  border-radius: 5px;
+} */
+
+
+/* .wrapper::-webkit-scrollbar-track{
+  background: ;
+} */
+
+.wrapper {
+  overflow: hidden; /* Hide scrollbars initially */
+}
+
+.wrapper:hover {
+  overflow-y: scroll; /* Show scrollbars on hover */
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 12px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #3c3a3a;
+  border-radius: 3px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  display: transparent; /* Make the scrollbar track transparent */
 }
