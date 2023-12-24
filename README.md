@@ -1,3 +1,7 @@
+
+https://github.com/nitesh-kumar813/Spotify_Clone./assets/130125901/c2943db6-02a3-47e1-8c27-e5a7b69d4637
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
